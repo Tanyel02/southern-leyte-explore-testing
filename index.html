@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Southern Leyte Explore</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="site-nav"></div>
+
+  <header class="hero">
+    <div class="container text-center">
+      <h1>Discover the Beauty of Southern Leyte</h1>
+      <p class="lead mb-4">Explore amazing destinations, find accommodations, and discover local food.</p>
+      <form id="hero-search" class="hero-search d-flex mx-auto" style="max-width:640px">
+        <input id="hero-input" class="form-control" type="search"
+               placeholder="Search places, hotels, restaurants, attractions...">
+        <button class="btn btn-ocean" type="submit">Search</button>
+      </form>
+      <a href="explore.html" class="btn btn-light rounded-pill mt-4 px-4">Explore Now</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Popular Destinations</h2>
+      <p class="section-sub">Details are marked unverified until confirmed from official sources.</p>
+      <div class="row g-4" id="destinations-grid"></div>
+    </div>
+  </section>
+
+  <section class="section-soft">
+    <div class="container">
+      <h2 class="section-title">Recommended Hotels &amp; Resorts</h2>
+      <p class="section-sub">Only verified or owner-entered prices will be shown.</p>
+      <div class="row g-4" id="hotels-grid"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Popular Restaurants</h2>
+      <p class="section-sub">Menus and prices come from the restaurants themselves.</p>
+      <div class="row g-4" id="restaurants-grid"></div>
+    </div>
+  </section>
+
+  <section class="section-soft">
+    <div class="container">
+      <h2 class="section-title">Featured Schools</h2>
+      <p class="section-sub">Public and private schools across Southern Leyte.</p>
+      <div class="row g-4" id="schools-grid"></div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
